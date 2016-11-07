@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		div,img,ul,li,h1,h2{
+			margin: 0;
+			padding: 0;
+		}
+		img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="wrap">
+			
+		</div>
+	</div>
+	<script id="test" type="text/html">
+		{{each list as value i}}
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<img src="images/{{#value}}.jpg" alt="">	
+			</div>
+		{{/each}}	
+	</script>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/art-template.js"></script>
+	<script type="text/javascript" src="js/art.json"></script>
+	<script type="text/javascript">
+		$(function(){
+			console.log(data);
+			var html = template("test",data);
+			$("#wrap").html(html);
+		})	
+	</script>
+</body>
+</html>
