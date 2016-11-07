@@ -10,12 +10,34 @@
 			margin: 0;
 			padding: 0;
 		}
+		.clearFix:before,.clearFix:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
 		img{
 			width: 100%;
+		}
+		ul{
+			width: 90%;
+			margin: 0 auto;
+		}
+		li{
+			list-style: none;
+			float: left;
+			font-size: 0.58rem;
+			width: 30%;
+			text-align: center;	
+			
 		}
 	</style>
 </head>
 <body>
+	<ul>
+		<li><a href="">上衣</a></li>
+		<li><a href="">帽子</a></li>
+		<li><a href="">模特</a></li>
+	</ul>
 	<div class="container">
 		<div class="row" id="wrap">
 			
@@ -29,6 +51,7 @@
 		{{/each}}	
 	</script>
 	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/fontsizeset.js"></script>
 	<script type="text/javascript" src="js/art-template.js"></script>
 	<script type="text/javascript" src="js/art.json"></script>
 	<script type="text/javascript">
