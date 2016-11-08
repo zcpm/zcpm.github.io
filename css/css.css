@@ -90,3 +90,13 @@ a{
 	display: block;
 	margin: 0 auto;
 }
+/*底部*/
+.back{
+	position: fixed;
+	bottom: 50px;
+	right: 2px;
+	font-size: 0.5rem;
+	border-radius: 0.5rem;
+	color: #fff;
+	background-color: rgba(225, 77, 77, 0.25);
+}
