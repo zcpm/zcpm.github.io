@@ -1,0 +1,92 @@
+/*公共*/
+div,img,ul,li,h1,h2{
+		margin: 0;
+		padding: 0;
+}
+.clearFix:before,.clearFix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+@keyframes myFirst{
+	0% {color: #caad42}
+	50% {color: #ca8142}
+	100% {color: #cdc707}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+	0% {color: #caad42}
+	50% {color: #ca8142}
+	100% {color: #cdc707}
+}
+
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	0% {color: #caad42}
+	50% {color: #ca8142}
+	100% {color: #cdc707}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+	0% {color: #caad42}
+	50% {color: #ca8142}
+	100% {color: #cdc707}
+}
+img{
+	width: 100%;
+}
+/*头部*/
+header{	
+	background-color: #000;
+}
+h1{
+	width: 96%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #f2f611;
+	line-height: 1rem;
+}
+/*内容体*/
+.banner{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 0.2rem;
+}
+.tet{
+	width: 96%;
+	margin: 0 auto;
+}
+p{
+	font-size: 0.38rem;
+	font-weight: 700;
+}
+ul{
+	width: 96%;
+	margin: 0 auto;
+}
+li{
+	list-style: none;
+	float: left;
+	font-size: 0.48rem;
+	width: 33.33%;
+	text-align: center;
+	background-color: #6e6e6e;
+}		
+a{
+	animation: myFirst 2s infinite;
+	-o-animation: myFirst 2s infinite;
+	-moz-animation: myFirst 2s infinite;
+	-webkit-animation: myFirst 2s infinite;
+	font-weight: 800;
+	color: #caad42;
+}
+.qr-code{
+	width: 100%;
+}
+.qr-code img{
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+}
